@@ -12,8 +12,6 @@ type Props = {
 export default async function Project({params}: Props) {
    const slug = params.project;
    const project = await getProject(slug);
-
-   // console.log(slug, project)
    
    return (
       <div>
